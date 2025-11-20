@@ -8265,6 +8265,12 @@ li.trackback {
   font-family: var(--body-font);
   letter-spacing: normal;
 }
+/* Ajuste solo para reducir el tamaño del título principal */
+.hero-style2 .hero-title {
+  font-size: 90px !important;
+}
+
+
 @media (max-width: 1500px) {
   .hero-style2 .hero-title {
     font-size: 140px;
@@ -13231,6 +13237,13 @@ li.trackback {
 .service-card:hover .btn-wrap .btn {
   opacity: 1;
 }
+/* Igualar altura de todas las tarjetas del apartado Service */
+.service-card {
+    min-height: 430px; /* Ajusta entre 400–500 si necesitas más o menos espacio */
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 1399px) {
   .service-card {
     padding: 30px 40px 0px 70px;
@@ -14627,6 +14640,13 @@ li.trackback {
 }
 .process-card:hover .process-card-number span {
   background: var(--theme-color);
+}
+/* Igualar altura de los cuadros del proceso */
+.process-card {
+    height: 100%;
+    min-height: 430px; /* Puedes ajustar 430px según el alto que quieras */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Process Area 2 ---------------------------------- */
@@ -17321,4 +17341,296 @@ li.trackback {
   .pt-105 {
     padding-top: 65px;
   }
+}
+/* ------------------- Miracle - Projects Section ------------------- */
+.miracle-projects-area {
+    padding: 100px 0;
+    background: var(--smoke-color3);
+    position: relative;
+}
+
+.miracle-projects-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.miracle-projects-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 20px;
+    font-family: var(--title-font);
+}
+
+.miracle-projects-text {
+    font-size: 18px;
+    color: var(--body-color);
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-family: var(--body-font);
+}
+
+.miracle-projects-btn-wrap {
+    margin-top: 35px;
+}
+
+.miracle-projects-btn {
+    display: inline-block;
+    background: var(--theme-color);
+    color: var(--white-color);
+    padding: 14px 32px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.miracle-projects-btn:hover {
+    background: var(--title-color);
+}
+/* Reducir el espacio solo debajo de service-area-1 */
+.service-area-1 {
+    padding-bottom: 120px !important;
+}
+
+   /* Testimonial Carousel - Miracle /////
+
+/* Espaciado para que no se pegue arriba */
+.space-top-fix {
+    padding-top: 80px;
+}
+
+/* Caja testimonial */
+.testimonial-card {
+    background: var(--white-color);
+    border-radius: 20px;
+    padding: 40px 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    /* Borde naranja Miracle */
+    border: 3px solid #EA5501;
+}
+
+
+.testimonial-card p {
+    font-size: 20px;
+    color: var(--body-color);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.testimonial-card .author-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.testimonial-card .author-role {
+    font-size: 16px;
+    color: var(--body-color);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.05);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(234,85,1,0.2); /* tu color theme */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(40%); /* gris elegante */
+}
+/* Apartado CTA Miracle */
+.miracle-cta-section {
+    padding: 110px 0; /* MÁS SEPARACIÓN DEL CARRUSEL */
+    margin-top: 90px; /* SEPARACIÓN EXTRA SUPERIOR */
+    
+    background: linear-gradient(135deg, #EA5501 0%, #FF7A33 100%);
+    text-align: center;
+    border-radius: 18px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+.miracle-cta-section .section-title {
+    font-family: var(--title-font);
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.miracle-cta-section .section-subtitle {
+    font-family: var(--body-font);
+    color: #ffffff;
+    font-size: 20px;
+    max-width: 680px;
+    margin: 0 auto 35px auto;
+}
+
+.miracle-cta-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #EA5501;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.miracle-cta-btn:hover {
+    background: #f3f3f3;
+}
+/* --- Fondo general del hero --- */
+.hero-enhanced {
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ffffff 0%, #f4f4f4 100%);
+}
+
+/* --- Sombra suave para que no se vea plano --- */
+.hero-enhanced::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.06), transparent);
+    pointer-events: none;
+}
+
+/* --- Caja del texto --- */
+.hero-content-box {
+    max-width: 620px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #EA5501;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    max-width: 430px;
+    color: #000000;
+    font-weight: 400;
+}
+
+/* --- Barra de color como acento visual --- */
+.hero-accent-bar {
+    width: 120px;
+    height: 6px;
+    background-color: #EA5501;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+
+/* --- Caja de imagen --- */
+.hero-image-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 55%;
+}
+
+.hero-machine-img {
+    width: 100%;
+    filter: drop-shadow(0px 18px 40px rgba(0, 0, 0, 0.805));
+    transform: scale(1.08);
+}
+/**Presentación*/
+/* --- CONTENEDOR GENERAL --- */
+.about-mission-wrapper {
+    padding: 90px 0;
+    background: #f8f8f8;
+    margin-top: 150px; /* o ajusta el valor según necesites */
+}
+
+/* --- SECCIÓN PRINCIPAL --- */
+.section-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Barra de acento */
+.accent-bar {
+    width: 120px;
+    height: 6px;
+    background: #EA5501;
+    border-radius: 4px;
+    margin: 25px auto 0;
+}
+
+/* --- GRID DE MISIÓN Y VISIÓN --- */
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
+/* --- TARJETAS --- */
+.info-card {
+    background: white;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    border-left: 6px solid #EA5501;
+    transition: 0.3s ease;
+}
+
+/* Hover profesional */
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #73758A;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
 }
